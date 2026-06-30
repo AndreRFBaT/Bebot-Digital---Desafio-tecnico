@@ -1,4 +1,6 @@
-# Termômetro da Copa 2026
+# Desafio técnico: Bebot Digital
+
+## Termômetro da Copa 2026
 
 Tela única que mostra as **5 seleções com maior aproveitamento** na fase de
 grupos da Copa 2026 (estado mockado após a 2ª rodada), com status de
@@ -87,8 +89,5 @@ natural e evita duplicar a regra de negócio no front.
 
 ## O que revisei com cuidado vs. confiei na IA
 
-- **Revisei linha a linha:** todo o `src/domain/` (métricas, ordenação, status)
-  e o teste — é o núcleo correto do desafio; conferi os desempates e o status
-  manualmente contra o dataset.
-- **Confiei mais na IA (com revisão leve):** boilerplate de scaffold (Vite,
-  Tailwind, configs) e o estilo Tailwind dos componentes.
+- **Validei o comportamento da aplicação executando o projeto localmente**, verificando os cálculos de aproveitamento, ordenação, exportação em CSV e a integração entre frontend e backend.
+- **Utilizei a IA para acelerar a implementação da estrutura do projeto**, configurações, componentes e parte da lógica, realizando validações funcionais durante o desenvolvimento em vez de revisar cada linha de código individualmente.
