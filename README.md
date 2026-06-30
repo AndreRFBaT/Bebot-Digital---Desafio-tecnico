@@ -1,5 +1,47 @@
 # Desafio técnico: Bebot Digital
 
+Link para os documentos de prompts:
+
+[Prompts utilizados durante o desafio](https://github.com/AndreRFBaT/Bebot-Digital---Desafio-tecnico/tree/main/PROMPTS)
+
+## Estrutura do projeto
+
+```text
+
+├── dataset.json                 # Dados mockados da Copa 2026
+├── docker-compose.yml           # Ambiente Docker
+├── Dockerfile                   # Configuração da imagem Docker
+├── package.json
+├── README.md
+├── src
+│   ├── domain                   # Regras de negócio
+│   │   ├── metricas.ts
+│   │   ├── ordenacao.ts
+│   │   ├── status.ts
+│   │   ├── termometro.ts
+│   │   └── termometro.test.ts
+│   ├── server                   # API Express
+│   │   ├── dataset.ts
+│   │   ├── index.ts
+│   │   └── rotas.ts
+│   └── web                      # Aplicação React
+│       ├── api.ts
+│       ├── App.tsx
+│       ├── csv.ts
+│       ├── formato.ts
+│       ├── index.css
+│       ├── main.tsx
+│       └── components
+│           ├── Filtros.tsx
+│           ├── ListaProximasRodadas.tsx
+│           ├── StatusBadge.tsx
+│           ├── TabelaSelecoes.tsx
+│           └── TermometroPage.tsx
+├── tailwind.config.js
+├── tsconfig.json
+└── vite.config.ts
+```
+
 ## Termômetro da Copa 2026
 
 Tela única que mostra as **5 seleções com maior aproveitamento** na fase de
