@@ -1,0 +1,12 @@
+node_modules
+dist
+.git
+.gitignore
+*.log
+npm-debug.log*
+tsconfig.tsbuildinfo
+Dockerfile
+.dockerignore
+docker-compose.yml
+README_DOCKER.md
+.DS_Store
