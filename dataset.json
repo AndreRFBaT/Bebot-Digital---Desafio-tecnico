@@ -1,0 +1,21 @@
+[
+  { "id": "BRA", "selecao": "Brasil",          "bandeira": "🇧🇷", "grupo": "A", "jogos": 2, "v": 2, "e": 0, "d": 0, "gp": 5, "gc": 1 },
+  { "id": "MEX", "selecao": "México",          "bandeira": "🇲🇽", "grupo": "A", "jogos": 2, "v": 1, "e": 1, "d": 0, "gp": 3, "gc": 2 },
+  { "id": "MAR", "selecao": "Marrocos",        "bandeira": "🇲🇦", "grupo": "A", "jogos": 2, "v": 0, "e": 1, "d": 1, "gp": 1, "gc": 3 },
+  { "id": "KOR", "selecao": "Coreia do Sul",   "bandeira": "🇰🇷", "grupo": "A", "jogos": 2, "v": 0, "e": 0, "d": 2, "gp": 1, "gc": 4 },
+
+  { "id": "ARG", "selecao": "Argentina",       "bandeira": "🇦🇷", "grupo": "B", "jogos": 2, "v": 2, "e": 0, "d": 0, "gp": 4, "gc": 0 },
+  { "id": "FRA", "selecao": "França",          "bandeira": "🇫🇷", "grupo": "B", "jogos": 2, "v": 1, "e": 1, "d": 0, "gp": 4, "gc": 1 },
+  { "id": "CIV", "selecao": "Côte d'Ivoire",   "bandeira": "🇨🇮", "grupo": "B", "jogos": 2, "v": 0, "e": 1, "d": 1, "gp": 1, "gc": 3 },
+  { "id": "AUS", "selecao": "Austrália",       "bandeira": "🇦🇺", "grupo": "B", "jogos": 2, "v": 0, "e": 0, "d": 2, "gp": 0, "gc": 5 },
+
+  { "id": "ESP", "selecao": "Espanha",         "bandeira": "🇪🇸", "grupo": "C", "jogos": 2, "v": 2, "e": 0, "d": 0, "gp": 6, "gc": 2 },
+  { "id": "POR", "selecao": "Portugal",        "bandeira": "🇵🇹", "grupo": "C", "jogos": 2, "v": 1, "e": 0, "d": 1, "gp": 3, "gc": 2 },
+  { "id": "URU", "selecao": "Uruguai",         "bandeira": "🇺🇾", "grupo": "C", "jogos": 2, "v": 1, "e": 0, "d": 1, "gp": 2, "gc": 2 },
+  { "id": "JPN", "selecao": "Japão",           "bandeira": "🇯🇵", "grupo": "C", "jogos": 1, "v": 0, "e": 0, "d": 1, "gp": 0, "gc": 5 },
+
+  { "id": "ENG", "selecao": "Inglaterra",      "bandeira": "🏴",   "grupo": "D", "jogos": 2, "v": 1, "e": 1, "d": 0, "gp": 3, "gc": 1 },
+  { "id": "GER", "selecao": "Alemanha",        "bandeira": "🇩🇪", "grupo": "D", "jogos": 2, "v": 1, "e": 1, "d": 0, "gp": 3, "gc": 1 },
+  { "id": "SUI", "selecao": "Suíça",           "bandeira": "🇨🇭", "grupo": "D", "jogos": 0, "v": 0, "e": 0, "d": 0, "gp": 0, "gc": 0 },
+  { "id": "CAN", "selecao": "Canadá",          "bandeira": "🇨🇦", "grupo": "D", "jogos": 2, "v": 0, "e": 0, "d": 2, "gp": 1, "gc": 5 }
+]
