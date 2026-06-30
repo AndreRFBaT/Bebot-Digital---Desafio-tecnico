@@ -1,0 +1,51 @@
+# Ambiente de desenvolvimento: API Express + front Vite, com hot reload.
+# Não há banco de dados nesta aplicação (fonte de dados é o dataset.json),
+# por isso não há serviço de DB nem volume de persistência de dados.
+
+services:
+  api:
+    build: .
+    image: termometro-copa:dev
+    command: npm run dev:api
+    environment:
+      NODE_ENV: development
+      PORT: "3001"
+    ports:
+      - "3001:3001"
+    volumes:
+      # Bind mount do código para hot reload (tsx watch).
+      - ./:/app
+      # Volume anônimo preserva o node_modules da imagem (não é sobrescrito
+      # pelo host, evitando binários de plataforma incompatíveis).
+      - /app/node_modules
+    networks:
+      - copa-net
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:3001/api/copa/top5"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+  web:
+    build: .
+    image: termometro-copa:dev
+    command: npm run dev:web
+    environment:
+      # Faz o proxy /api do Vite apontar para o container da API.
+      API_PROXY_TARGET: http://api:3001
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    depends_on:
+      - api
+    networks:
+      - copa-net
+    restart: unless-stopped
+
+networks:
+  copa-net:
+    driver: bridge
