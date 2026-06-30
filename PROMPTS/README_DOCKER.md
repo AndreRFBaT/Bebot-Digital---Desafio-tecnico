@@ -1,4 +1,4 @@
-# Termômetro da Copa 2026 — Guia de execução (Local e Docker)
+# Guia de execução (Local e Docker)
 
 Este guia cobre as duas formas de rodar o projeto: **localmente** (Node na
 máquina) e via **Docker / Docker Compose** (ambiente de desenvolvimento
